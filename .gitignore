@@ -1,34 +1,41 @@
-# Gradle files
-.gradle/
-build/
+# 💔 Pycache – jo purani yaadon jaisa hai, par ab kaam ka nahi
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
 
-# Local configuration file (sdk path, etc)
-local.properties
+# 💌 Virtual Environments – jise banaya tha chalne ke liye, par commit mein nahi chahiye
+*.env
+*.venv/
+env/
+venv/
 
-# Log/OS Files
+# 🌧️ Logs – gusse, takraar, aur debugging ke nishaan
 *.log
+*.out
+*.err
 
-# Android Studio generated files and folders
-captures/
-.externalNativeBuild/
-.cxx/
-*.aab
-*.apk
-output-metadata.json
+# 🧠 Database – dil ke raaz, jo sirf local hone chahiye
+*.db
+*.sqlite3
 
-# IntelliJ
-*.iml
+# 💻 Editor ka personal touch – jise duniya ko nahi दिखाना
+.vscode/
 .idea/
-misc.xml
-deploymentTargetDropDown.xml
-render.experimental.xml
+*.code-workspace
 
-# Keystore files
-*.jks
-*.keystore
+# 🧺 Node modules – bhar bhar ke files, par dil se door
+node_modules/
+npm-debug.log*
 
-# Google Services (e.g. APIs or Firebase)
-google-services.json
+# 🖼️ OS ke naksh – jo kabhi kabhi chhup chhup ke aa jaate hain
+.DS_Store
+Thumbs.db
 
-# Android Profiling
-*.hprof
+# 🧵 Build artifacts – jo kabhi deploy hote hain, par asli code se अलग
+dist/
+build/
+*.map
+
+# 🧘 Git ka self-respect
+.gitignore
